@@ -1,0 +1,43 @@
+
+
+<div class="container p-4 mt-4">
+  <div class="text-center">
+    <h1 class="mb-4"><strong>Suppliers</strong></h1>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="fill">
+      <mat-label>Search</mat-label>
+      <input matInput [(ngModel)]="searchText" placeholder="Search">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-table [dataSource]="suppliers | searchFilter:searchText" class="mat-elevation-z8">
+      <ng-container matColumnDef="companyCode">
+        <mat-header-cell *matHeaderCellDef> Company Code </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.companyCode }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="companyName">
+        <mat-header-cell *matHeaderCellDef> Company Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.companyName }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="telephoneNumber">
+        <mat-header-cell *matHeaderCellDef> Telephone Number </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.telephoneNumber }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="delete">
+        <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <button class="btn btn-sm btn-danger" (click)="deleteSupplier(element.id)">
+            <i class="fa-solid fa-delete-left me-1"></i>Delete
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" class="hover-row"></mat-row>
+    </mat-table>
+  </div>
+</div>

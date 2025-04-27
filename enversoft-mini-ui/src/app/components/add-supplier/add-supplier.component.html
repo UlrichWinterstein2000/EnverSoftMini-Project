@@ -1,0 +1,50 @@
+<div class="container p-4 mt-4">
+  <div class="text-center">
+    <h1 class="mb-4"><strong>Add Supplier</strong></h1>
+  </div>
+
+  <form [formGroup]="supplierForm" (ngSubmit)="addSupplier()" novalidate>
+    <div class="row text-center p-2">
+      <div class="col-sm-12">
+        <mat-form-field appearance="fill">
+          <mat-label>Company Code</mat-label>
+          <input matInput formControlName="companyCode" required>
+        </mat-form-field>
+        <div *ngIf="supplierForm.get('companyCode')?.invalid && supplierForm.get('companyCode')?.touched" class="text-danger">
+          Company Code is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center p-2">
+      <div class="col-sm-12">
+        <mat-form-field appearance="fill">
+          <mat-label>Company Name</mat-label>
+          <input matInput formControlName="companyName" required>
+        </mat-form-field>
+        <div *ngIf="supplierForm.get('companyName')?.invalid && supplierForm.get('companyName')?.touched" class="text-danger">
+          Company Name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center p-2">
+      <div class="col-sm-12">
+        <mat-form-field appearance="fill">
+          <mat-label>Telephone Number</mat-label>
+          <input matInput formControlName="telephoneNumber" required pattern="^[0-9]{10}$">
+        </mat-form-field>
+        <div *ngIf="supplierForm.get('telephoneNumber')?.invalid && supplierForm.get('telephoneNumber')?.touched" class="text-danger">
+          Telephone Number is required and must be 10 digits long.
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center p-2">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-sm btn-secondary me-1" routerLink="/"><i class="fa-solid fa-chevron-left me-1"></i>Back</button>
+        <button type="submit" class="btn btn-sm btn-success" [disabled]="supplierForm.invalid"><i class="fa-solid fa-plus me-1"></i>Add Supplier</button>
+      </div>
+    </div>
+  </form>
+</div>

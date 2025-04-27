@@ -1,0 +1,50 @@
+.hover-row:hover {
+  background-color: #f1f1f1; 
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #DEDEDE;
+}
+
+body, .main {
+  margin-bottom: 60px;
+  background-color: #DEDEDE;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 5px 5px;
+  color: lightgray
+}
+
+.navbar {
+  background-color: #6B6B6B;
+  font-size: 20px;
+}
+
+label {
+  color: gray;
+}
+
+input {
+  color: gray;
+  border-radius: 250px;
+}
+
+.table {
+  color: grey
+}
+
+h1, h2 {
+  font-weight: 750;
+  color: grey !important;
+}
+
+p {
+  font-weight: 500;
+  color: grey;
+}
+

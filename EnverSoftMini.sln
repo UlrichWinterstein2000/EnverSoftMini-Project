@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoftMini.API", "EnverSoftMini.API\EnverSoftMini.API.csproj", "{52DF04D7-D259-4628-BF17-634D1535B5FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoftMini.Core", "EnverSoftMini.Core\EnverSoftMini.Core.csproj", "{3EEBFC28-BB40-4E25-8597-144E33E2E40F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoftMini.Service", "EnverSoftMini.Service\EnverSoftMini.Service.csproj", "{F44B6F19-D2D2-4114-8E1D-91D124F1C62C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoftMini.Repository", "EnverSoftMini.Repository\EnverSoftMini.Repository.csproj", "{ECC18AAE-D873-43A5-94D9-B71FDA6FF0BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{D8337A32-08D1-4FC4-9069-EC64FE839952}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "enversoft-mini-ui", "enversoft-mini-ui\enversoft-mini-ui.esproj", "{F203E10C-621F-4EC6-B601-0A77E6C2E090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52DF04D7-D259-4628-BF17-634D1535B5FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DF04D7-D259-4628-BF17-634D1535B5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DF04D7-D259-4628-BF17-634D1535B5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DF04D7-D259-4628-BF17-634D1535B5FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEBFC28-BB40-4E25-8597-144E33E2E40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEBFC28-BB40-4E25-8597-144E33E2E40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEBFC28-BB40-4E25-8597-144E33E2E40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEBFC28-BB40-4E25-8597-144E33E2E40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44B6F19-D2D2-4114-8E1D-91D124F1C62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44B6F19-D2D2-4114-8E1D-91D124F1C62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44B6F19-D2D2-4114-8E1D-91D124F1C62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44B6F19-D2D2-4114-8E1D-91D124F1C62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC18AAE-D873-43A5-94D9-B71FDA6FF0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC18AAE-D873-43A5-94D9-B71FDA6FF0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC18AAE-D873-43A5-94D9-B71FDA6FF0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC18AAE-D873-43A5-94D9-B71FDA6FF0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F203E10C-621F-4EC6-B601-0A77E6C2E090} = {D8337A32-08D1-4FC4-9069-EC64FE839952}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AA699A7-991D-41D2-B77D-5C0E42D4ACE8}
+	EndGlobalSection
+EndGlobal
