@@ -1,4 +1,4 @@
-# Mni-Project
+# Mini-Project
 
 ## How to run
 
